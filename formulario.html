@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechEvent Summit - Inscrições e Programação</title>
+</head>
+<body>
+    <header>
+        <h1 id="topo">TechEvent Summit 2026</h1>
+        <nav>
+            <a href="index.html">Sobre o evento</a>
+            <a href="cronograma.html">Programação</a>
+            <a href="#inscricao">Inscrição</a>
+            <a href="#rodape">Rodapé</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inscricao">
+            <h2>Seção 5 - Formulário de credenciamento</h2>
+            <p>Preencha seus dados para participar do TechEvent Summit.</p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <label for="nome">Nome completo:</label><br>
+                    <input type="text" id="nome" name="nome" required autofocus minlength="3"
+                           maxlength="60" placeholder="Digite seu nome completo"><br><br>
+
+                    <label for="senha">Senha de acesso ao portal:</label><br>
+                    <input type="password" id="senha" name="senha" required minlength="8"><br><br>
+
+                    <label for="pais">País de origem:</label><br>
+                    <select id="pais" name="pais">
+                        <option value="brasil" selected>Brasil</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="outro">Outro país</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil e preferências</legend>
+
+                    <p>Áreas de interesse:</p>
+                    <input type="checkbox" id="web" name="interesses" value="web">
+                    <label for="web">Web</label><br>
+                    <input type="checkbox" id="ia" name="interesses" value="ia">
+                    <label for="ia">Inteligência Artificial</label><br>
+                    <input type="checkbox" id="mobile" name="interesses" value="mobile">
+                    <label for="mobile">Mobile</label><br><br>
+
+                    <p>Tipo de ingresso:</p>
+                    <input type="radio" id="estudante" name="ingresso" value="estudante" checked>
+                    <label for="estudante">Estudante</label><br>
+                    <input type="radio" id="profissional" name="ingresso" value="profissional">
+                    <label for="profissional">Profissional</label><br>
+                    <input type="radio" id="vip" name="ingresso" value="vip">
+                    <label for="vip">VIP</label><br><br>
+
+                    <label for="workshops">Workshops de interesse:</label><br>
+                    <select id="workshops" name="workshops" multiple size="4">
+                        <option value="html-css">HTML e CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="ia-pratica">IA na prática</option>
+                        <option value="seguranca">Segurança digital</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalhes da participação</legend>
+
+                    <label for="chegada">Data de chegada:</label><br>
+                    <input type="date" id="chegada" name="chegada" min="2026-10-15" max="2026-10-17"><br><br>
+
+                    <label for="mentoria">Horário de mentoria:</label><br>
+                    <input type="time" id="mentoria" name="mentoria"><br><br>
+
+                    <label for="acompanhantes">Quantidade de acompanhantes:</label><br>
+                    <input type="number" id="acompanhantes" name="acompanhantes" min="0" max="5" step="1" value="0"><br><br>
+
+                    <label for="experiencia">Nível de experiência em programação:</label><br>
+                    <input type="range" id="experiencia" name="experiencia" min="0" max="100" step="10" value="50"><br><br>
+
+                    <label for="comprovante">Comprovante de meia-entrada:</label><br>
+                    <input type="file" id="comprovante" name="comprovante" accept=".pdf,.jpg,.jpeg,.png">
+                </fieldset>
+
+                <button type="submit">Enviar inscrição</button>
+                <button type="reset">Limpar campos</button>
+                <button type="button" onclick="alert('Confira seus dados antes de enviar.')">Conferir dados</button>
+            </form>
+        </section>
+    </main>
+
+    <p><a href="#topo">Voltar ao topo</a></p>
+
+    <footer id="rodape">
+        <p>TechEvent Summit 2026 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
