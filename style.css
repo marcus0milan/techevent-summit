@@ -1,14 +1,14 @@
 :root {
 	color-scheme: light;
-	--ink: #203b3b;
-	--muted: #526a68;
-	--green: #17635d;
-	--green-dark: #123e3b;
-	--copper: #b7603d;
-	--paper: #f3f6f2;
+	--ink: #1e3555;
+	--muted: #526984;
+	--blue: #2463a8;
+	--blue-dark: #153a67;
+	--blue-light: #8ab4e6;
+	--paper: #f3f7fc;
 	--surface: #ffffff;
-	--line: #d5e0db;
-	--soft-green: #e8f0ed;
+	--line: #d5e1ef;
+	--soft-blue: #e8f1fb;
 }
 
 * {
@@ -23,16 +23,16 @@ body {
 	margin: 0;
 	color: var(--ink);
 	background-color: var(--paper);
-	background-image: repeating-linear-gradient(135deg, transparent 0, transparent 22px, rgba(23, 99, 93, 0.025) 22px, rgba(23, 99, 93, 0.025) 23px);
-	font-family: "Segoe UI", Tahoma, sans-serif;
+	background-image: repeating-linear-gradient(135deg, transparent 0, transparent 22px, rgba(36, 99, 168, 0.025) 22px, rgba(36, 99, 168, 0.025) 23px);
+	font-family: "Manrope", "Segoe UI", Arial, sans-serif;
 	font-size: 1rem;
 	line-height: 1.65;
 }
 
 header {
 	color: var(--surface);
-	background-color: var(--green-dark);
-	border-bottom: 4px solid var(--copper);
+	background-color: var(--blue-dark);
+	border-bottom: 4px solid var(--blue-light);
 }
 
 header h1,
@@ -46,7 +46,7 @@ footer {
 header h1 {
 	margin-block: 0;
 	padding-block: 1.5rem 1rem;
-	font-family: Georgia, "Times New Roman", serif;
+	font-family: "Manrope", "Segoe UI", Arial, sans-serif;
 	font-size: clamp(2rem, 5vw, 3rem);
 	font-weight: 600;
 	line-height: 1.15;
@@ -66,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-	border-bottom-color: #e5a27f;
+	border-bottom-color: var(--blue-light);
 }
 
 main {
@@ -80,8 +80,8 @@ section {
 
 h2,
 h3 {
-	color: var(--green-dark);
-	font-family: Georgia, "Times New Roman", serif;
+	color: var(--blue-dark);
+	font-family: "Manrope", "Segoe UI", Arial, sans-serif;
 	line-height: 1.25;
 }
 
@@ -101,28 +101,28 @@ li {
 }
 
 strong {
-	color: var(--green-dark);
+	color: var(--blue-dark);
 }
 
 u {
-	text-decoration-color: var(--copper);
+	text-decoration-color: var(--blue);
 	text-decoration-thickness: 2px;
 	text-underline-offset: 0.2em;
 }
 
 a {
-	color: var(--green);
+	color: var(--blue);
 }
 
 a:hover {
-	color: var(--copper);
+	color: var(--blue-dark);
 }
 
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-	outline: 3px solid var(--copper);
+	outline: 3px solid var(--blue);
 	outline-offset: 3px;
 }
 
@@ -139,7 +139,7 @@ ol {
 }
 
 li::marker {
-	color: var(--copper);
+	color: var(--blue);
 	font-weight: 700;
 }
 
@@ -169,16 +169,16 @@ td {
 thead,
 tfoot {
 	color: var(--surface);
-	background-color: var(--green-dark);
+	background-color: var(--blue-dark);
 }
 
 tbody th {
 	white-space: nowrap;
-	background-color: var(--soft-green);
+	background-color: var(--soft-blue);
 }
 
 tbody tr:nth-child(even) td {
-	background-color: #f8faf8;
+	background-color: #f8fbff;
 }
 
 figure {
@@ -216,14 +216,14 @@ fieldset {
 	min-width: 0;
 	padding: 1.25rem;
 	border: 1px solid var(--line);
-	border-left: 4px solid var(--green);
+	border-left: 4px solid var(--blue);
 	background-color: var(--surface);
 }
 
 legend {
 	padding-inline: 0.5rem;
-	color: var(--green-dark);
-	font-family: Georgia, "Times New Roman", serif;
+	color: var(--blue-dark);
+	font-family: "Manrope", "Segoe UI", Arial, sans-serif;
 	font-size: 1.15rem;
 	font-weight: 700;
 }
@@ -242,7 +242,7 @@ select {
 	max-width: 100%;
 	min-height: 2.7rem;
 	padding: 0.5rem 0.65rem;
-	border: 1px solid #9aafaa;
+	border: 1px solid #9bb2ce;
 	border-radius: 3px;
 	color: var(--ink);
 	background-color: var(--surface);
@@ -261,7 +261,7 @@ select:not([multiple]) {
 input[type="checkbox"],
 input[type="radio"],
 input[type="range"] {
-	accent-color: var(--green);
+	accent-color: var(--blue);
 }
 
 input[type="range"] {
@@ -276,22 +276,22 @@ button {
 	min-height: 2.75rem;
 	margin: 0.25rem 0.5rem 0.25rem 0;
 	padding: 0.55rem 1rem;
-	border: 1px solid var(--green);
+	border: 1px solid var(--blue);
 	border-radius: 3px;
 	color: var(--surface);
-	background-color: var(--green);
+	background-color: var(--blue);
 	font: inherit;
 	font-weight: 600;
 	cursor: pointer;
 }
 
 button:hover {
-	border-color: var(--green-dark);
-	background-color: var(--green-dark);
+	border-color: var(--blue-dark);
+	background-color: var(--blue-dark);
 }
 
 button[type="reset"] {
-	color: var(--green-dark);
+	color: var(--blue-dark);
 	background-color: transparent;
 }
 
